@@ -4,7 +4,14 @@ h2, h3 {
 	font-family: 'Patua One', cursive;
 }
 
-h1 {font-family:'Patua One', cursive; font-size:8em; line-height:60px; color:#434343;}
+h1 {
+	font-family:'Patua One', cursive;
+	font-size:8em;
+	line-height:60px;
+	color:#434343;
+}
+
+#vmt/*Logo*/ {text-shadow: 2px 2px 0 white, 5px 5px 0 #CCC;}
 
 p.masthead_btn {
 font-family: "Patua One", cursive;
@@ -113,7 +120,7 @@ p {
 p.white {
 	color: #f9f9f9;
 }
-.button1, input[type="submit"], input[type="reset"], input[type="button"] {
+a.button1, .button1, input[type="submit"], input[type="reset"], input[type="button"] {
 	background: #3a3a3a;
 	border: 0;
 	color: #fff;
@@ -370,7 +377,7 @@ p.mid-text {
 }
 .portfolio {
 	text-align: center;
-	margin-top: 40px;
+	margin-top: 0;
 }
 p.proj-title {
 	margin-bottom: 5px;
@@ -652,6 +659,7 @@ p.t-type {
 		vertical-align: top;
 		width:auto;
 }
+
 .eight #portrait {margin-right:50px; display:inline-block;}
 
 div.inline {
@@ -659,6 +667,49 @@ div.inline {
 }
 
 ul li.inline {margin:5px;}
+
+a.full {
+		display:inline-block;
+		width:auto;
+		background:url(../images/zoom.png) no-repeat center #333333;
+		position:relative;
+		overflow:hidden;
+		height:212px;
+}
+
+a.full img {
+		opacity: 1;
+		-o-transition: opacity 0.1s linear;
+		-moz-transition: opacity 0.1s linear;
+		-webkit-transition: opacity 0.1s linear;
+}
+
+a.full:hover img {
+		opacity: 0.2;
+		-o-transition: opacity 0.1s linear;
+		-moz-transition: opacity 0.1s linear;
+		-webkit-transition: opacity 0.1s linear;
+}
+
+div.pricing > div.sixteen > div.one-third {margin-right:5px;margin-left:5px;}
+
+
+.hero-unit {text-align:center; font-size:2em; font-weight:400; font-family: 'Patua One', cursive;}
+.hero-unit strong {color:white; font-weight:400;}
+.hero-unit strong b {color:#CCC; font-weight:bold;}
+.hero-small {text-align:center;}
+.hero-small strong {sont-size:2em; font-weight:bold; color:white;}
+
+img#portrait { 
+    -webkit-filter:grayscale(1) brightness(-0.2);
+		-webkit-transition: all 0.5s linear;
+}
+
+img#portrait:hover {
+    -webkit-filter:grayscale(0) brightness(0);
+		-webkit-transition: all 0.5s linear;
+}
+
 
 @media only screen and (min-width: 960px) and (max-width: 1040px){
 	#intro, #intro .bg1, #intro .city {
@@ -675,13 +726,16 @@ ul li.inline {margin:5px;}
 	height: 640px;
 }
 .social-intro {margin-top: 0;}
+
+a.full {height:169px;}
+
 }
+
 @media only screen and (min-width: 768px) and (max-width: 959px) {
 	
 #intro, #intro .bg1, #intro .city {
 	height: 640px;
 }
-
 
 }
 @media only screen and (max-width: 767px) {
@@ -694,6 +748,9 @@ ul li.inline {margin:5px;}
 #intro, #intro .bg1, #intro .city {
 	height: 640px;
 }
+
+a.full {height:97px;}
+
 }
 @media only screen and (max-width: 639px) {
 	#intro, #intro .bg1, #intro .city {
@@ -702,7 +759,8 @@ ul li.inline {margin:5px;}
 	
 	h1.small{font-size:35px}
 	
-	
+	a.full {height:97px;}
+
 }
 @media only screen and (min-width: 480px) and (max-width: 639px) {
 nav ul li {
@@ -775,5 +833,11 @@ nav ul li#contactAlt {
 nav ul li#contactAlt:hover {background-color: #444;}
 
 nav ul li#contactAlt a img {background-color:white; border:1px solid white;}
+
+.pp_pic_holder  {width:94% !important;}
+img.scale-with-grid {width:272px !important;}
+.pp_pic_holder * {width:94% !important;}
+
+a.full {height:212px;}
 
 }
